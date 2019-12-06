@@ -8,7 +8,7 @@ class CardGame
 
   # naming case is incorrect for method; should be snake case in Ruby: check_for_ace
   # conditional should be using "==" as a comparator, not "="
-  # no require for card Class? May not be able to access the "value" property
+  # no require for Card class. May not be able to access the "value" property
   def checkforAce(card)
     if card.value = 1
       return true
@@ -19,7 +19,9 @@ class CardGame
 
 
   # syntax error - "dif" => def
+  # need a comma between the two values in the parameters (card1, card2)
   # indentation isn't right
+  # "card" hasn't been defined; should return "card1" instead
   dif highest_card(card1 card2)
   if card1.value > card2.value
     return card
@@ -30,6 +32,10 @@ end
 end
 
 # method isn't part of the CardGame class so probably won't run
+# "total" variable hasn't been assigned a value
+# output isn't very good from a user perspective; probably need a space at the
+# end of the string, or interpolate the total in
+
 def self.cards_total(cards)
   total
   for card in cards
