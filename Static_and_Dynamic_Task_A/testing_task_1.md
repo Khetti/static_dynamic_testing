@@ -36,9 +36,10 @@ end
 
 # method isn't part of the CardGame class so probably won't run
 # "total" variable hasn't been assigned a value
-# output isn't very good from a user perspective; probably need a space at the
-# end of the string, or interpolate the total in
-
+# output doesn't work; need to interpolate variable into string
+# this should not be a self method, as it is taking in an input from elsewhere
+# return line will execute on first loop and end, so will always
+# bring back the wrong value
 def self.cards_total(cards)
   total
   for card in cards
