@@ -6,6 +6,9 @@
 
 class CardGame
 
+  # CardGame class has no properties and no reader, so there won't be
+  # an array of cards to run the total method on
+  # Need an initialize function
   # naming case is incorrect for method; should be snake case in Ruby: check_for_ace
   # conditional should be using "==" as a comparator, not "="
   # no require for Card class. May not be able to access the "value" property
